@@ -51,11 +51,14 @@ const showMeals = (meals) => {
           <div class="modal-header">
             <h5 class="modal-title" id="modal-${meal.idMeal}-label">${
         meal.strMeal
-      }</h5>
+      }
+
+      </h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <!-- Add modal content here -->
+            <img src="${meal.strMealThumb}" class="card-img-top" alt="...">
             <div class="card-body">
 
             <p class="card-text">${meal.strInstructions.slice(0, 250)} ...</p>
